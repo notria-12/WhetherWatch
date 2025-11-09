@@ -5,7 +5,7 @@ Um aplicativo de previsão do tempo moderno e elegante para Wear OS, desenvolvid
 ## 📱 Funcionalidades
 
 - **Previsão do tempo em tempo real** usando a API Open-Meteo
-- **Localização automática** do usuário
+- **Localização automática** do usuário com exibição da cidade
 - **Interface amigável** otimizada para telas redondas do Wear OS
 - **Dados detalhados do clima**:
   - Temperatura atual
@@ -14,6 +14,16 @@ Um aplicativo de previsão do tempo moderno e elegante para Wear OS, desenvolvid
   - Velocidade do vento
   - Precipitação
   - Condições climáticas com ícones
+  - Nome da cidade atual
+
+## 🎥 Demonstração
+
+### Vídeo do App em Ação
+
+> 📹 **Assista ao app funcionando:**
+
+https://github.com/user-attachments/assets/seu-video-aqui.mp4
+
 
 ## 🏗️ Arquitetura
 
@@ -58,20 +68,36 @@ O app solicita as seguintes permissões:
 - `ACCESS_COARSE_LOCATION` - Para obter localização aproximada
 - `INTERNET` - Para buscar dados da API
 
-## 🌐 API
+## 🌐 APIs Utilizadas
 
-O app utiliza a [Open-Meteo API](https://open-meteo.com/), uma API gratuita de previsão do tempo que não requer chave de API.
+O app utiliza duas APIs gratuitas que não requerem chave de autenticação:
 
-### Endpoint utilizado:
+### 1. Open-Meteo API
+[Open-Meteo](https://open-meteo.com/) - API de previsão do tempo
+
+**Endpoint:**
 ```
 https://api.open-meteo.com/v1/forecast
 ```
 
-### Parâmetros:
+**Parâmetros:**
 - `latitude` & `longitude` - Coordenadas do usuário
 - `current` - Dados meteorológicos atuais
 - `hourly` - Previsão horária
 - `daily` - Previsão diária
+
+### 2. Nominatim (OpenStreetMap)
+API de geocoding reversa para obter o nome da cidade
+
+**Endpoint:**
+```
+https://nominatim.openstreetmap.org/reverse
+```
+
+**Parâmetros:**
+- `lat` & `lon` - Coordenadas para geocoding reversa
+- `format=json` - Formato de resposta
+- `addressdetails=1` - Inclui detalhes do endereço
 
 ## 🎨 Design
 
@@ -113,6 +139,3 @@ Buscar Dados do Tempo → Exibir Informações
 
 Este projeto foi criado como exemplo educacional.
 
-## 👨‍💻 Autor
-
-Desenvolvido com ❤️ para Wear OS
