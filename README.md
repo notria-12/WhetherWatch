@@ -22,7 +22,8 @@ Um aplicativo de previsão do tempo moderno e elegante para Wear OS, desenvolvid
 
 > 📹 **Assista ao app funcionando:**
 
-https://github.com/user-attachments/assets/seu-video-aqui.mp4
+
+[Screen_recording_20251109_033023.webm](https://github.com/user-attachments/assets/b063ca43-d9bd-4efc-b1d2-2a823d227bd0)
 
 
 ## 🏗️ Arquitetura
