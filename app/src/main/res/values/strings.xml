@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">WhetherWatch</string>
+    
+    <!-- Screens -->
+    <string name="loading">Carregando…</string>
+    <string name="error_location">Não foi possível obter sua localização</string>
+    <string name="error_network">Erro ao carregar dados do tempo</string>
+    <string name="retry">Tentar Novamente</string>
+    
+    <!-- Permission -->
+    <string name="permission_title">Localização Necessária</string>
+    <string name="permission_message">Precisamos acessar sua localização para mostrar o tempo</string>
+    <string name="permission_grant">Permitir</string>
+    
+    <!-- Weather Info -->
+    <string name="feels_like">Sensação</string>
+    <string name="humidity">Umidade</string>
+    <string name="wind">Vento</string>
+    <string name="precipitation">Precipitação</string>
+    
+    <!-- Units -->
+    <string name="celsius">°C</string>
+    <string name="percent">%</string>
+    <string name="kmh">km/h</string>
+    <string name="mm">mm</string>
+</resources>
